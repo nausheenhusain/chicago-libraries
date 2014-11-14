@@ -2,5 +2,23 @@
     <head></head>
     <body>
         <h1>Libraries in Chicago</h1>
+        <table border=1 cellpadding=7>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Hours Of Operation</th>
+                <th>Cybernavigator?</th>
+                <th>Teacher In The Library?</th>
+            </tr>
+        {% for obj in object_list %}
+            <tr>
+                <td>{{ obj.name }}</td>
+                <td>{{ obj.address }}</td>
+                <td>{{ obj.hours_of_operation }}</td>
+                <td>{{ obj.cybernavigator }}</td>
+                <td>{{ obj.teacher_in_the_library }}</td>
+            </tr>
+        {% endfor %}
+        </table>
     </body>
 </html>
