@@ -12,7 +12,7 @@
             </tr>
         {% for obj in object_list %}
             <tr>
-                <td>{{ obj.name }}</td>
+                <td><a href="{{ obj.id }}/" target="_blank">{{ obj.name }}</a></td>
                 <td>{{ obj.address }}</td>
                 <td>{{ obj.hours_of_operation }}</td>
                 <td>{{ obj.cybernavigator }}</td>
